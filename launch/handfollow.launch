@@ -1,0 +1,9 @@
+<launch>
+  <rosparam file="$(find motor_controller)/config/params.yaml" command="load" />
+  <rosparam file="$(find project_launch)/config/topic_names.yaml" command="load" />
+  <rosparam file="$(find blobdetection)/config/params.yaml" command="load" />
+  <!--<node name="motor_controller2" pkg="motor_controller2" type="motor_controller2" />-->
+  <include file="$(find motor_controller2)/launch/pcontrol.launch" />
+  <node name="pixelDetector" pkg="blobdetection" type="pixelDetector" />
+  <node name="follower" pkg="milestone0controller" type="follower" />
+</launch>
