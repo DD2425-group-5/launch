@@ -1,5 +1,4 @@
 topic_list: {
-  test: /three,
   robot_topics: {
     subscribed: {pwm_topic: /arduino/pwm},
     published: {

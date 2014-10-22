@@ -7,5 +7,5 @@
   <include file="$(find openni2_launch)/launch/openni2.launch" />
 
   <node name="pixelDetector" pkg="blobdetection" type="pixelDetector" />
-  <node name="blob_follower" pkg="blow_follow_controller" type="blob_follower" />
+  <node name="blob_follower" pkg="blob_follow_controller" type="blob_follower" />
 </launch>
