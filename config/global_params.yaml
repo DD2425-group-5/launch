@@ -1,5 +1,5 @@
 robot_info: {
   wheel_baseline: 0.21, 
-  wheel_radius: 0.0992,
+  wheel_radius: 0.0496,
   ticks_per_rev: 360
 }
