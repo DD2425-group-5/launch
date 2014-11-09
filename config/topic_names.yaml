@@ -12,6 +12,9 @@ topic_list: {
     },
     motor2: {
       subscribed: {twist_topic: /motor2/twist}
+    },
+    motor3: {
+      subscribed: {twist_topic: /motor3/twist}
     }
   },
   vision_topics: {
