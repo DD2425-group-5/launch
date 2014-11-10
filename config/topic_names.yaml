@@ -14,7 +14,8 @@ topic_list: {
       subscribed: {twist_topic: /motor2/twist}
     },
     motor3: {
-      subscribed: {twist_topic: /motor3/twist}
+      subscribed: {twist_topic: /motor3/twist},
+      published: {bool_topic: /motor3/is_turning}
     }
   },
   vision_topics: {
