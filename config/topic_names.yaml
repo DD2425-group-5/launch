@@ -1,1 +1,26 @@
-motorController: {pwm_topic: /arduino/pwm,encoder_topic: /arduino/encoders,twist_topic: /motor_controller/twist}
+topic_list: {
+  robot_topics: {
+    subscribed: {pwm_topic: /arduino/pwm},
+    published: {
+      encoder_topic: /arduino/encoders,
+      depth_topic: /camera/depth/image_raw
+    }
+  },
+  controller_topics: {
+    basic: {
+      subscribed: {twist_topic: /motor_controller/twist}
+    },
+    motor2: {
+      subscribed: {twist_topic: /motor2/twist}
+    },
+    motor3: {
+      subscribed: {twist_topic: /motor3/twist},
+      published: {bool_topic: /motor3/is_turning}
+    }
+  },
+  vision_topics: {
+    pixel_detect: {
+      published: {blob: /vision/closest_blob}
+    }
+  }
+}
