@@ -22,5 +22,11 @@ topic_list: {
     pixel_detect: {
       published: {blob: /vision/closest_blob}
     }
+  },
+  mapping_topics: {
+    segment_storage: {
+      segment_save_dir: /home/ras/data/segments,
+      bag_segment_topic: /segment_storage/segments
+    }
   }
 }
