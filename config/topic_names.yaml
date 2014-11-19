@@ -21,7 +21,11 @@ topic_list: {
   hardware_topics: {
     odometry: {
       published: {odometry_topic: /odometry/odometry}
+    },
+    ir_sensors: {
+      published: {ir_distance_topic: /ir_sensors/dists}
     }
+
   },
   vision_topics: {
     pixel_detect: {
