@@ -18,6 +18,11 @@ topic_list: {
       published: {bool_topic: /motor3/is_turning}
     }
   },
+  hardware_topics: {
+    odometry: {
+      published: {odometry_topic: /odometry/odometry}
+    }
+  },
   vision_topics: {
     pixel_detect: {
       published: {blob: /vision/closest_blob}
