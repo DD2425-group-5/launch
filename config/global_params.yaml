@@ -3,6 +3,13 @@ robot_info: {
   wheel_baseline: 0.21, 
   wheel_radius: 0.0496,
   ticks_per_rev: 360,
+  num_sensors: 6,
+  sensor_names: [s0, s1, s2, s3, s4, s5],
+  # the values of these should correspond to the name of parameters specifying
+  # the offsets. Some nodes may try to read in the sensor data using 
+  # std::string name(sensor_names[i]+sensor_x_suffix) or something similar
+  sensor_x_suffix: _offset_x,
+  sensor_y_suffix: _offset_y,
   # assume x axis is parallel to the wheelbase, positive x is to the left,
   # negative to the right. y axis is positive in the forward direction, negative
   # backwards. Measurements are in metres, and are very approximate
@@ -25,5 +32,5 @@ robot_info: {
   # cross right
   s5_offset_x: -0.065,
   s5_offset_y: 0.0648,
-  s5_rotation: 0,
+  s5_rotation: 0
 }
