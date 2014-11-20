@@ -1,3 +1,9 @@
+# subscribed indicates that the node will do modify its state or something
+# similar based on the messages received there. For example, publishing to the
+# /motor_controller/twist topic will define setpoints for the controller. A node
+# may subscribe to other topics as well, but these topics should be "defined" by
+# the node.
+# Published indicates that this topic somehow originates from the node.
 topic_list: {
   robot_topics: {
     subscribed: {pwm_topic: /arduino/pwm},
@@ -24,7 +30,11 @@ topic_list: {
   hardware_topics: {
     odometry: {
       published: {odometry_topic: /odometry/odometry}
+    },
+    ir_sensors: {
+      published: {ir_distance_topic: /ir_sensors/dists}
     }
+
   },
   vision_topics: {
     pixel_detect: {
