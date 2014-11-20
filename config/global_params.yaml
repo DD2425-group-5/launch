@@ -1,5 +1,29 @@
 robot_info: {
+  # measurements in metres
   wheel_baseline: 0.21, 
   wheel_radius: 0.0496,
-  ticks_per_rev: 360
+  ticks_per_rev: 360,
+  # assume x axis is parallel to the wheelbase, positive x is to the left,
+  # negative to the right. y axis is positive in the forward direction, negative
+  # backwards. Measurements are in metres, and are very approximate
+  # front left
+  s0_offset_x: 0.01,
+  s0_offset_y: 0.11,
+  # front right
+  s1_offset_x: -0.01,
+  s1_offset_y: 0.11,
+  # back left
+  s2_offset_x: 0.01,
+  s2_offset_y: -0.11,
+  # back right
+  s3_offset_x: -0.01,
+  s3_offset_y: -0.11,
+  # cross left
+  s4_offset_x: 0.066,
+  s4_offset_y: 0.0672,
+  s4_rotation: 0,
+  # cross right
+  s5_offset_x: -0.065,
+  s5_offset_y: 0.0648,
+  s5_rotation: 0,
 }
