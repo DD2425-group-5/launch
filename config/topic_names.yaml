@@ -49,8 +49,5 @@ topic_list: {
     segment_stitching: {
       published: {stitched_line_topic: /segment_stitching/stitched_lines }
     }
-    segment_stitching: {
-      published: {stitched_line_topic: /segment_stitching/stitched_lines }
-    }
   }
 }
