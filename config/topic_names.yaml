@@ -46,5 +46,8 @@ topic_list: {
       segment_save_dir: /home/ras/data/segments,
       bag_segment_topic: /segment_storage/segments
     }
+    segment_stitching: {
+      published: {stitched_line_topic: /segment_stitching/stitched_lines }
+    }
   }
 }
