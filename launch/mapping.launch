@@ -1,0 +1,8 @@
+<launch>
+  <arg name="segfile"/>
+  <param name="/test/segments" value="$(arg segfile)"/>
+  <include file = "$(find mapping_launch)/launch/map_representation.launch"/>
+  <include file = "$(find mapping_launch)/launch/segment_stitching.launch">
+    <arg name="segfile" value="$(arg segfile)"/>
+  </include>
+</launch>
