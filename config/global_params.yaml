@@ -43,5 +43,13 @@ robot_info: {
   s5_offset_x: -0.065,
   s5_offset_y: 0.0648,
   s5_offset_z: 0,
-  s5_rotation: 0
+  s5_rotation: 0,
+  # camera position
+  camera_offset_x: 0,
+  camera_offset_y: 0,
+  camera_offset_z: 0.10,
+  camera_rotation_x: 15,
+  camera_fov_h: 57.5,
+  camera_fov_v: 45
+
 }
