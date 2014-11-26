@@ -3,7 +3,7 @@
   <rosparam file="$(find motor_controller3)/config/params.yaml" command="load" />
   <rosparam file="$(find simple_explorer)/config/paramswf.yaml" command="load" />
   <rosparam file="$(find project_launch)/config/topic_names.yaml" command="load" />
-  <include file = "$(find motor_controller3)/launch/pcontrol.launch"/>
-  <include file = "$(find simple_explorer)/launch/simple_explorer.launch"/>  
+  <include file="$(find motor_controller3)/launch/pcontrol.launch"/>
+  <include file="$(find simple_explorer)/launch/simple_explorer.launch"/>  
 
 </launch>

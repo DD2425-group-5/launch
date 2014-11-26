@@ -4,6 +4,7 @@ robot_info: {
   wheel_radius: 0.0496,
   ticks_per_rev: 360,
   num_sensors: 6,
+  ir_error_threshold: 0.21, # after this point the IR becomes unreliable
   sensor_names: [s0, s1, s2, s3, s4, s5],
   # the values of these should correspond to the name of parameters specifying
   # the offsets. Some nodes may try to read in the sensor data using 
