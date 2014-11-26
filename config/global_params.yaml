@@ -47,7 +47,7 @@ robot_info: {
   # camera position
   camera_offset_x: 0,
   camera_offset_y: 0,
-  camera_offset_z: 0.10,
+  camera_offset_z: 0.27,
   camera_rotation_x: 15,
   camera_fov_h: 57.5,
   camera_fov_v: 45
