@@ -3,6 +3,6 @@
 <launch>
   <include file="$(find project_launch)/launch/simple_explorer.launch"/>
   <include file="$(find mapping_launch)/launch/segment_storage.launch"/>
-  <include file="$(find vision_master)/launch/object_detection.launch"/>
+  <!--<include file="$(find vision_master)/launch/object_detection.launch"/> -->
 
 </launch>
