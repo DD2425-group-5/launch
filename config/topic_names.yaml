@@ -47,11 +47,16 @@ topic_list: {
       bag_segment_topic: /segment_storage/segments
     },
     segment_stitching: {
-      published: {line_topic: /segment_stitching/lines },
-      published: {object_topic: /segment_stitching/objects }
+      published: {
+        line_topic: /segment_stitching/lines,
+        object_topic: /segment_stitching/objects 
+      }
     },
     map_representation: {
-      published: {map_topic: /map }
+      published: {
+        map_topic: /map,
+        object_marker_topic: /map_representation/object_markers
+      }
     }
   }
 }

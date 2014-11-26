@@ -1,8 +1,10 @@
 <!-- Launch file for the first phase of the competition. Runs the simple
      explorer, vision master node, and segment storage node -->
 <launch>
+  <node name="serial_node" pkg="rosserial_python" type="serial_node.py" args="_port:=/dev/ttyACM0"/>
   <include file="$(find project_launch)/launch/simple_explorer.launch"/>
   <include file="$(find mapping_launch)/launch/segment_storage.launch"/>
   <!--<include file="$(find vision_master)/launch/object_detection.launch"/> -->
+  <include file="$(find hardware)/launch/odometry.launch"/>
 
 </launch>
