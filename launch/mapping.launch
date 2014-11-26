@@ -1,7 +1,10 @@
 <launch>
   <arg name="segfile"/>
+  <arg name="gridres" default="0.05"/>
   <param name="/test/segments" value="$(arg segfile)"/>
-  <include file = "$(find mapping_launch)/launch/map_representation.launch"/>
+  <include file = "$(find mapping_launch)/launch/map_representation.launch">
+    <arg name="grid_resolution" default="$(arg gridres)" />
+  </include>
   <include file = "$(find mapping_launch)/launch/segment_stitching.launch">
     <arg name="segfile" value="$(arg segfile)"/>
   <node name="map_server" pkg="map_server" type="map_server" args="$(find mapping_launch)/config/map.yaml"/>
