@@ -1,5 +1,6 @@
 <launch>
 
   <node name="serial_node" pkg="rosserial_python" type="serial_node.py" args="_port:=/dev/ttyACM0"/>
+  <include file = "$(find ir_sensors)/launch/ir_sensors.launch"/>
 
 </launch>
