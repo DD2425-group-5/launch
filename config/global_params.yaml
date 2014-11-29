@@ -13,8 +13,8 @@ robot_info: {
   sensor_x_suffix: _offset_x,
   sensor_y_suffix: _offset_y,
   sensor_z_suffix: _offset_z,
-  # assume x axis is parallel to the wheelbase, positive x is to the left,
-  # negative to the right. y axis is positive in the forward direction, negative
+  # assume x axis is parallel to the wheelbase, positive x is to the right,
+  # negative to the left. y axis is positive in the forward direction, negative
   # backwards. Measurements are in metres, and are very approximate front left.
   # Rotations are positive to the left, negative to the right, about the z axis.
   s0_offset_x: 0.01,
