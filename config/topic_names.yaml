@@ -29,7 +29,8 @@ topic_list: {
   },
   hardware_topics: {
     odometry: {
-      published: {odometry_topic: /odometry/odometry}
+      published: {odometry_topic: /odometry/odometry},
+      published: {pose_topic: /odometry/pose}
     },
     ir_sensors: {
       published: {ir_distance_topic: /ir_sensors/dists}
