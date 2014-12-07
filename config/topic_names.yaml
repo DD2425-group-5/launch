@@ -63,9 +63,10 @@ topic_list: {
     },
     topological: {
       published: {
-        bag_topic: /topological_map/map,
+        bag_topic: /topological_map/nodes,
         bag_dir: /home/ras/data/topmap,
-        marker_topic: /topological_map/markers
+        marker_topic: /topological_map/markers,
+        map_topic: /topological_map/map
       }
     }
   }
