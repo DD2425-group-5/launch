@@ -58,6 +58,13 @@ topic_list: {
         map_topic: /map,
         object_marker_topic: /map_representation/object_markers
       }
+    },
+    topological: {
+      published: {
+        bag_topic: /topological_map/map,
+        bag_dir: /home/ras/data/topmap,
+        marker_topic: /topological_map/markers
+      }
     }
   }
 }
